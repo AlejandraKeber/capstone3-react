@@ -1,11 +1,10 @@
+import Home from './components/Home';
 import './App.css';
 
-function App() {
-  return (
-    <div>
-      <p>Capstone3</p>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <Home />
+  </div>
+);
 
 export default App;
