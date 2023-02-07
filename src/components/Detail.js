@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import GoBack from './GoBack';
 import { fetchDetail } from '../redux/DetailSlice';
+import '../styles/Detail.css';
 
 const Detail = () => {
   const { id } = useParams();
@@ -22,63 +23,65 @@ const Detail = () => {
         <div>
           <GoBack />
           <div>
-            <div key={detail.id}>
-              <img src={detail.icon} alt={detail.id} />
-              <div>
+            <div className="detail-container" key={detail.id}>
+              <div className="detail-title">
+                <img src={detail.icon} alt={detail.id} />
                 <h2>{detail.name}</h2>
               </div>
-              <h3>
-                <span> Name:</span>
-                {' '}
-                {detail.name}
-              </h3>
-              <h3>
-                <span> Symbol:</span>
-                {' '}
-                {detail.symbol}
-              </h3>
-              <h3>
-                <span> Rank:</span>
-                {' '}
-                {detail.rank}
-              </h3>
-              <h3>
-                <span> Price:</span>
-                {' '}
-                {detail.price}
-                {' '}
-                $
-              </h3>
-              <h3>
-                <span> Price in BTC:</span>
-                {' '}
-                {detail.priceBtc}
-              </h3>
-              <h3>
-                <span>Available Supply:</span>
-                {' '}
-                {detail.availableSupply}
-              </h3>
-              <h3>
-                <span>Total Supply:</span>
-                {' '}
-                {detail.totalSupply}
-              </h3>
-              <h3>
-                <span>Price Change in hour:</span>
-                {' '}
-                {detail.priceChange1h}
-              </h3>
-              <h3>
-                <span>Price Change in day:</span>
-                {' '}
-                {detail.priceChange1d}
-              </h3>
-              <h3>
-                <span>Price Change in week:</span>
-                {' '}
-                {detail.priceChange1w}
-              </h3>
+              <ul className="detail-info">
+                <li className="detail-list">
+                  Name:
+                  {' '}
+                  {detail.name}
+                </li>
+                <li className="detail-list">
+                  Symbol:
+                  {' '}
+                  {detail.symbol}
+                </li>
+                <li className="detail-list">
+                  Rank:
+                  {' '}
+                  {detail.rank}
+                </li>
+                <li className="detail-list">
+                  Price:
+                  {' '}
+                  {detail.price}
+                  {' '}
+                  $
+                </li>
+                <li className="detail-list">
+                  Price in BTC:
+                  {' '}
+                  {detail.priceBtc}
+                </li>
+                <li className="detail-list">
+                  Available Supply:
+                  {' '}
+                  {detail.availableSupply}
+                </li>
+                <li className="detail-list">
+                  Total Supply:
+                  {' '}
+                  {detail.totalSupply}
+                </li>
+                <li className="detail-list">
+                  Price Change in hour:
+                  {' '}
+                  {detail.priceChange1h}
+                </li>
+                <li className="detail-list">
+                  Price Change in day:
+                  {' '}
+                  {detail.priceChange1d}
+                </li>
+                <li className="detail-list">
+                  Price Change in week:
+                  {' '}
+                  {detail.priceChange1w}
+                </li>
+              </ul>
             </div>
           </div>
         </div>

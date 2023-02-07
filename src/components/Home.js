@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCrypto } from '../redux/CryptoSlice';
 import SearchInput from './SearchInput';
+import '../styles/Home.css';
 
 function Home() {
   const dispatch = useDispatch();
@@ -27,9 +28,9 @@ function Home() {
       {list && (
         <div>
           <SearchInput search={search} handleChange={handleChange} />
-          <div>
+          <div className="list-container">
             {filter.map((item) => (
-              <NavLink to={`/${item.id}`} key={item.id}>
+              <NavLink className="list-info" to={`/${item.id}`} key={item.id}>
                 <label key={item.id} htmlFor={item.id}>
                   <img src={item.icon} alt={item.id} />
                   <div>

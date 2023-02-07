@@ -1,0 +1,17 @@
+.search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 415px;
+  background-color: #334e8e;
+  border: 1px solid #334e8e;
+  border-radius: 1rem;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: larger;
+}

@@ -12,6 +12,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  background-color: #446cb4;
 }
 
 nav ul {
@@ -21,5 +22,5 @@ nav ul {
 
 .link {
   text-decoration: none;
-  color: blue;
+  color: #fff;
 }
