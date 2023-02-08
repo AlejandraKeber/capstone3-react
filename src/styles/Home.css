@@ -1,0 +1,20 @@
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.list-info {
+  border: 1px solid #334e8e;
+  border-radius: 1rem;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.list_button {
+  border: 1px solid #334e8e;
+  border-radius: 1rem;
+  padding: 9px;
+}
