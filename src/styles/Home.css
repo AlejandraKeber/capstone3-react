@@ -11,10 +11,29 @@
   border-radius: 1rem;
   padding: 1rem;
   line-height: 2rem;
+  box-shadow: 10px 5px 5px #334e8e;
+  text-decoration: none;
+}
+
+.home-img {
+  width: 80px;
+  height: 80px;
 }
 
 .list_button {
   border: 1px solid #334e8e;
+  background-color: #334e8e;
   border-radius: 1rem;
   padding: 9px;
+}
+
+.list_button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (min-width: 780px) {
+  .list-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
