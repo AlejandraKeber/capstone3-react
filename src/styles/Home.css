@@ -1,0 +1,40 @@
+.list-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  text-align: center;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.list-info {
+  border: 1px solid #334e8e;
+  border-radius: 1rem;
+  padding: 1rem;
+  line-height: 2rem;
+  box-shadow: 10px 5px 5px #334e8e;
+  text-decoration: none;
+}
+
+.home-img {
+  width: 80px;
+  height: 80px;
+}
+
+.list_button {
+  border: 1px solid #334e8e;
+  background-color: #334e8e;
+  border-radius: 1rem;
+  padding: 9px;
+}
+
+.list_button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (min-width: 980px) {
+  .list-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
