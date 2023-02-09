@@ -12,12 +12,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #446cb4;
+  height: 120px;
+}
+
+.nav-title {
+  gap: 10px;
+  font-size: x-large;
 }
 
 nav ul {
   list-style: none;
-  gap: 1rem;
+  gap: 5px;
+}
+
+nav li {
+  padding: 5px;
 }
 
 .link {

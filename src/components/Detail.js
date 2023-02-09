@@ -25,7 +25,7 @@ const Detail = () => {
           <div>
             <div className="detail-container" key={detail.id}>
               <div className="detail-title">
-                <img src={detail.icon} alt={detail.id} />
+                <img className="detail-img" src={detail.icon} alt={detail.id} />
                 <h2>{detail.name}</h2>
               </div>
               <ul className="detail-info">

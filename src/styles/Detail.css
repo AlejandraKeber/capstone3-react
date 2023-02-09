@@ -7,6 +7,11 @@
   padding: 2rem;
 }
 
+.detail-img {
+  width: 150px;
+  height: 150px;
+}
+
 li {
   list-style: none;
   font-size: larger;

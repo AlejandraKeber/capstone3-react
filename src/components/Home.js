@@ -32,7 +32,7 @@ function Home() {
             {filter.map((item) => (
               <NavLink className="list-info" to={`/${item.id}`} key={item.id}>
                 <label key={item.id} htmlFor={item.id}>
-                  <img src={item.icon} alt={item.id} />
+                  <img className="home-img" src={item.icon} alt={item.id} />
                   <div>
                     <h2>{item.name}</h2>
                     <h3>
