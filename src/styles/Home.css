@@ -1,8 +1,8 @@
 .list-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   text-align: center;
-  gap: 1rem;
+  gap: 10px;
   padding: 1rem;
 }
 
@@ -32,8 +32,9 @@
   transform: scale(1.1);
 }
 
-@media (min-width: 780px) {
+@media (min-width: 980px) {
   .list-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
   }
 }
